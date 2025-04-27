@@ -27,8 +27,8 @@ const App = () => {
 
   useEffect(() => {
     if (query.trim() === "") {
-      setListaSuggerimenti([]); // Se query è vuota, svuota la lista
-      return; // Non chiamare il server
+      setListaSuggerimenti(listaSuggerimentiInitialState);
+      return;
     }
     fetchDataAndJson(query);
   }, [query]);
@@ -66,11 +66,6 @@ export default App
 
 📌 Milestone 1: Creare un campo di ricerca e mostrare la lista dei suggerimenti
 Obiettivo: Mostrare suggerimenti dinamici in base alla ricerca dell'utente.
-- campo input in cui ricercare (<input type="text">)
-- Effettuare chiamata API all'indirizzo in base alla ricerca nel campo input
-https://boolean-spec-frontend.vercel.app/freetestapi/products?search=[query]
-- Mostrare i risultati API sotto l'input in una tendina di suggerimenti
-- Se l'utente cancella il testo, la tendina scompare.
 
 
 📌 Milestone 2: Implementare il Debounce per Ottimizzare la Ricerca
