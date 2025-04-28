@@ -6,6 +6,5 @@
 📌 Milestone 2: Implementare il Debounce per Ottimizzare la Ricerca
 **Obiettivo**: Ridurre il numero di richieste API e migliorare le prestazioni.
 
-
 🎯 Bonus: Caricare i Dettagli del Prodotto Selezionato
 **Obiettivo**: Aggiungere interattività permettendo di visualizzare le informazioni complete di un prodotto.
